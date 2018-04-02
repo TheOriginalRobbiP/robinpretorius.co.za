@@ -24,7 +24,7 @@ def lambda_handler(event, context):
        
         s3 = boto3.resource('s3')
         
-        portfolio_bucket = s3.Bucket('portfolio.robinpretorius.co.za')
+        portfolio_bucket = s3.Bucket('robinpretorius.co.za')
         build_bucket = s3.Bucket(location['bucketName'])
         
         portfolio_zip = StringIO.StringIO()
