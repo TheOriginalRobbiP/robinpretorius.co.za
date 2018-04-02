@@ -1,145 +1,426 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>This is a serverless website made with lambda!</title>
-    <link rel="stylesheet" href="styles/main.css"/>
+<html lang="en">
+<head>
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+<!-- Meta -->
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat"/>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cardo"/>
-  </head>
+<!-- Title -->
+<title>Robin Pretorius | DevOps</title>
 
-  <body>
-    <main class="overflow--auto">
-      <h1 class="color--skyBlue section__heading--largest">
-        <!--Your name goes here -->
-        Hello RobbiA. You're pretty cool!
-      </h1>
+<!-- Favicons -->
+<link rel="shortcut icon" href="images/favicon.png">
+<link rel="apple-touch-icon" href="images/favicon_60x60.png">
+<link rel="apple-touch-icon" sizes="76x76" href="images/favicon_76x76.png">
+<link rel="apple-touch-icon" sizes="120x120" href="images/favicon_120x120.png">
+<link rel="apple-touch-icon" sizes="152x152" href="images/favicon_152x152.png">
 
-      <ul class="section--social">
+<!-- Google Web Fonts -->
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400italic,400,600,700' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Raleway:400,100,200,300,600,700,500' rel='stylesheet' type='text/css'>
 
-        <!--Links to relevant professional social media & resume -->
-        <!-- See: http://fontawesome.io/icons/#brand for more -->
+<!-- Stylesheets -->
+<link rel="stylesheet" href="css/bootstrap.min.css" />
+<link rel="stylesheet" href="css/owl.carousel.css" />
+<link rel="stylesheet" href="css/owl.theme.css" />
+<link rel="stylesheet" href="css/swiper.min.css">
+<link rel="stylesheet" href="css/font-awesome.min.css" />
+<link rel="stylesheet" href="fonts/flaticon.css" />
+<link rel="stylesheet" href="css/style.css" />
+<link rel="stylesheet" href="colors/blue.css" id="color" />
 
-        <!-- Link to Linked In profile -->
-        <li class="socialWrapper">
-          <a class="color--skyBlue social"
-             title="LinkedIn Profile"
-             target="_blank"
-             href="#">
-            <i class="fa fa-linkedin"></i>
-          </a>
-        </li>
+</head>
 
-        <!-- Link to GitHub profile -->
-        <li class="socialWrapper color--skyBlue">
-          <a class="social color--skyBlue"
-             title="GitHub Profile"
-             target="_blank"
-             href="#">
-            <i class="fa fa-github"></i>
-          </a>
-        </li>
+<body>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 
-        <!-- Link to resume, probably a .pdf -->
-        <li class="socialWrapper">
-          <a class="social color--skyBlue"
-             title="Resume"
-             href="#">
-            <i class="fa fa-file-text"></i>
-          </a>
-        </li>
-      </ul>
-    </main>
+<!-- Loader -->
+<div id="page-loader"></div>
+<!-- Loader / End -->
 
-    <section class="background--skyBlue section">
-      <h2 class="color--cloud margin--none section__text--centered">
-        Portfolio
-      </h2>
-    </section>
+<!-- Page Wrapper -->
+<div id="page-wrapper">
+	
+	<!-- Home -->
+    <div id="home">
+    	<div class="home-wrapper">
 
-    <section class="section section--alignCentered section--description">
-      <div class="section__exampleWrapper">
-        <div class="section__example">
-          <img alt="example screenshot of a project involving code"
-               class="section__exampleImage"
-               src="images/example1.png"/>
-          <dl class="color--cloud">
-            <dt class="section__exampleTitle section__text--centered">
-              Work Example
-            </dt>
-            <dd></dd>
-          </dl>
-        </div>
-      </div>
+	    	<!-- Home Content -->
+	    	<div class="home-content home-photo main-photo dark">
+	    		<div class="overlay overlay-black" data-alpha="60"></div>
+	    		<div class="text-center vertical-center">
+	    			<span class="home-title">Robin James <strong>Pretorius</strong></span>
+	    			<span class="home-caption">DevOps <strong>Engineer</strong></span>
+	    		</div>
+	    	</div>
 
-      <div class="section__exampleWrapper">
-        <div class="section__example">
-          <img alt="example screenshot of a project involving chemistry"
-               class="section__exampleImage"
-               src="images/example2.png"/>
-          <!-- “Chemistry” by Surian Soosay is licensed under CC BY 2.0
-               https://www.flickr.com/photos/ssoosay/4097410999 -->
-          <dl class="color--cloud">
-            <dt class="section__exampleTitle section__text--centered ">
-              Work Example
-            </dt>
-            <dd></dd>
-          </dl>
-        </div>
-      </div>
+	    	<!-- Start Button -->
+	    	<a href="#" id="btn-start" data-target="next-section"></a>
 
-      <div class="section__exampleWrapper">
-        <div class="section__example">
-          <img alt="example screenshot of a project involving cats"
-               class="section__exampleImage"
-               src="images/example3.png"/>
-          <!-- “Bengal cat” by roberto shabs is licensed under CC BY 2.0
-               https://www.flickr.com/photos/37287295@N00/2540855181 -->
-          <dl class="color--cloud">
-            <dt class="section__exampleTitle section__text--centered">
-              Work Example
-            </dt>
-            <dd></dd>
-          </dl>
-        </div>
-      </div>
-    </section>
+	    	<!-- Main Nav -->
+	    	<nav id="main-nav">
+	    		<!-- Menu Toggle -->
+	    		<a href="#" class="menu-toggle menu-toggle-destop" data-target="menu-toggle"></a>
+	    		<!-- Content -->
+	            <div class="text-right vertical-center">
+	        		<div class="nav-text">
+		        		<div class="my-avatar"><img src="images/photos/profile.jpg" class="img-circle" alt="" /></div>
+		        		<h2 class="margin-bottom-0">Robin James <strong>Pretorius</strong></h2>
+		        		<h6 class="nav-caption">I’m 29 years old <span class="text-primary">DevOps Engineer</span> from Cape Town, South Africa</h6>
+		        	</div>
+	        		<div class="content-buttons">
+	            		<a href="#" class="btn btn-primary" data-placement="1">Download my CV</a>
+	                </div>
+	            </div>
+	    		<!-- Navigation buttons -->
+	            <div class="nav-buttons">
+	            	<a href="#" class="btn-prev" data-target="prev-section"><i class="fa fa-angle-left"></i><span></span></a>
+	            	<a href="#" class="btn-next" data-target="next-section"><span>My Resume</span><i class="fa fa-angle-right"></i></a>
+	            </div>
+	    	</nav>
+	    	
+    	</div>
+    </div> 
+    <!-- Home / End -->
 
-    <section class="background--skyBlue section">
-      <h2 class="color--cloud margin--none section__text--centered">
-        About Me
-      </h2>
-    </section>
+    <!-- Sections -->
+    <div id="sections" class="swiper-container">
 
-    <section class="section section--alignCentered section--description">
-      <p class="color--darkgrey section__description">
-        I am learning to code in the cloud! I like to work hard and learn new things.
-        I want to work for a company that will pay me to code in the cloud!
-      </p>
+    	<div class="swiper-wrapper">
 
-    <div class="background--skyBlue modal--closed">
-      <span class="color--cloud modal__closeButton">
-        <i class="fa fa-window-close-o"></i>
-      </span>
-      <img alt="example screenshot of a project involving code"
-           class="modal__image"
-           src="images/example1.png"/>
-      <div class="color--cloud modal__text">
-        <h2 class="modal__title">
-          Work Example Name
-        </h2>
-        <a class="color--skyBlue modal__link"
-           href="#">
-          Check it out
-        </a>
-        <p class="modal__description">
-          A long description of the work in question.
-        </p>
-      </div>
+    		<!-- Resume -->
+			<section id="resume" class="swiper-slide" data-caption="Check my <span>skills</span> &amp; <span>abilities</span>" data-title="My Resume">
+				<div class="section-wrapper">
+					<div class="resume-grid padded">
+						<div class="row">
+
+			    			<div class="resume-col">
+
+			    				<!-- About -->
+				    			<div class="resume-box">
+				    				<h4 class="title-bar title-bar-black title-bar-hover"><strong>About</strong> Me</h4>
+				    				<div class="box-content">
+				    					<p class="lead">Hello I’m <strong>Robin James Pretorius</strong> a 29 years old DevOps Engineer in Cape Town, South Africa.</p>
+	            						<a href="#" class="btn btn-primary" data-target="slide" data-slide="4">Contact Me</a>
+				    				</div>
+				    			</div>
+
+				    			<!-- Services -->
+				    			<div class="resume-box">
+				    				<h4 class="title-bar title-bar-black title-bar-hover">My <strong>Services</strong></h4>
+				    				<div class="box-content">
+				    					<div class="single-service">	
+				    						<div class="service-icon icon icon-black icon-circle icon-filled">
+				    							<i class="flaticon-cloudy52"></i>
+				    						</div>
+				    						<div class="service-content">
+				    							<h4 class="service-title"><strong>Dev</strong> Ops</h4>
+				    							<span class="service-caption text-muted "><i>Short, but really great &amp; awesome service caption</i></span>
+				    						</div>
+				    					</div>
+				    					<div class="single-service">	
+				    						<div class="service-icon icon icon-black icon-circle icon-filled">
+				    							<i class="flaticon-computer203"></i>
+				    						</div>
+				    						<div class="service-content">
+				    							<h4 class="service-title"><strong>Frontend </strong> Development</h4>
+				    							<span class="service-caption text-muted "><i>Short, but really great &amp; awesome service caption</i></span>
+				    						</div>
+				    					</div>
+				    				</div>
+				    			</div>
+
+				    		</div>
+
+				    		<div class="resume-col">
+
+			    				<!-- Skills & Abilities -->
+				    			<div class="resume-box">
+				    				<h4 class="title-bar title-bar-black title-bar-hover"><strong>Skills</strong> &amp; Abilities</h4>
+				    				<div class="box-content">
+				    					<!-- Skill Bar -->
+				    					<div class="skill-bar">
+					    					<div class="progress">
+											  <div class="progress-bar progress-bar-black" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
+											    <span class="percent">70%</span>
+											  </div>
+											</div>
+											<h6 class="skill-title">AWS</h6>
+										</div>
+										<!-- Skill Bar -->
+				    					<div class="skill-bar">
+					    					<div class="progress">
+											  <div class="progress-bar progress-bar-black" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+											    <span class="percent">60%</span>
+											  </div>
+											</div>
+											<h6 class="skill-title">Docker</h6>
+										</div>
+										<!-- Skill Bar -->
+				    					<div class="skill-bar">
+					    					<div class="progress">
+											  <div class="progress-bar progress-bar-black" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%;">
+											    <span class="percent">75%</span>
+											  </div>
+											</div>
+											<h6 class="skill-title">Python</h6>
+										</div>
+										<!-- Skill Bar -->
+				    					<div class="skill-bar">
+					    					<div class="progress">
+											  <div class="progress-bar progress-bar-black" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100" style="width: 55%;">
+											    <span class="percent">55%</span>
+											  </div>
+											</div>
+											<h6 class="skill-title">Ifrastructure design</h6>
+										</div>
+				    				</div>
+				    			</div>
+
+				    			<!-- Educations & Jobs -->
+				    			<div class="resume-box">
+				    				<h4 class="title-bar title-bar-black title-bar-hover"><strong>Education</strong> &amp; Jobs</h4>
+				    				<div class="box-content">
+				    					<div class="timeline">
+						                    <!-- Single event -->
+						                  	<div class="timeline-event te-black">
+						                      <div class="event-date">03.2018 - Present</div>
+						                      <h4 class="event-name"><strong>Junior</strong> Dev Ops</h4>
+						                      <div class="event-description ">ThisIsMe (Pty) Ltd</div>
+						                    </div>
+						                    <!-- Single event -->
+						                  	<div class="timeline-event te-black">
+						                      <div class="event-date">11.2016 - 03.2018</div>
+						                      <h4 class="event-name"><strong>Sales &</strong> Marketing</h4>
+						                      <div class="event-description ">SmartSwitch</div>
+						                    </div>
+				    					</div>
+				    				</div>
+				    			</div>
+				    		</div>
+
+				    		<div class="resume-col">
+
+				    			<!-- Languages -->
+				    			<div class="resume-box">
+				    				<h4 class="title-bar title-bar-black title-bar-hover"><strong>Language</strong> Skills</h4>
+				    				<div class="box-content text-center">
+				    					<!-- Single Chart -->
+				    					<div class="single-chart font-alt">
+				    						<div class="chart chart-lg" data-bar-color="#111111" data-track-color="#e5e5e5" data-percent="75"><span class="percent"></span></div>
+				    						<div class="chart-content text-uppercase">	
+				    							<span class="chart-title">English</span>
+				    							<span class="chart-caption text-muted">Advanced level</span>
+				    						</div>
+				    					</div>
+				    					<!-- Single Chart -->
+				    					<div class="single-chart font-alt">
+				    						<div class="chart chart-lg" data-bar-color="#111111" data-track-color="#e5e5e5" data-percent="25"><span class="percent"></span></div>
+				    						<div class="chart-content text-uppercase">	
+				    							<span class="chart-title">Afrikaans</span>
+				    							<span class="chart-caption text-muted">Basic level</span>
+				    						</div>
+				    					</div>
+				    				</div>
+				    			</div>
+
+				    			<!-- Hobbies -->
+				    			<div class="resume-box">
+				    				<h4 class="title-bar title-bar-black title-bar-hover"><strong>Hobbies</strong> &amp; Interests</h4>
+				    				<div class="box-content">
+				    					<div class="row">
+				    						<!-- Icon Box -->
+									        <div class="col-sm-4 icon-box text-center">
+									          <span class="icon icon-circle icon-sm icon-black"><i class="flaticon-computer203"></i></span>
+									          <h6 class="font-alt margin-bottom-0">Gaming</h6>
+									        </div>
+									        <!-- Icon Box -->
+									        <div class="col-sm-4 icon-box text-center">
+									          <span class="icon icon-circle icon-sm icon-black"><i class="flaticon-cloudy52"></i></span>
+									          <h6 class="font-alt margin-bottom-0">Cloud</h6>
+									        </div>
+									        <!-- Icon Box -->
+				    						<div class="col-sm-4 icon-box text-center">
+									          <span class="icon icon-circle icon-sm icon icon-black"><i class="flaticon-coffee-cup1"></i></span>
+									          <h6 class="font-alt margin-bottom-0">Coffee</h6>
+											</div>
+											<!-- Icon Box -->
+				    						<div class="col-sm-4 icon-box text-center">
+												<span class="icon icon-circle icon-sm icon icon-black"><i class="flaticon-dart19"></i></span>
+												<h6 class="font-alt margin-bottom-0">Sport</h6>
+											  </div>
+											  <!-- Icon Box -->
+											  <div class="col-sm-4 icon-box text-center">
+												<span class="icon icon-circle icon-sm icon icon-black"><i class="flaticon-read7"></i></span>
+												<h6 class="font-alt margin-bottom-0">Reading</h6>
+											  </div>
+											  <!-- Icon Box -->
+											  <div class="col-sm-4 icon-box text-center">
+												<span class="icon icon-circle icon-sm icon icon-black"><i class="flaticon-photo-camera2"></i></span>
+												<h6 class="font-alt margin-bottom-0">Photography</h6>
+											  </div>
+				    					</div>
+				    				</div>
+				    			</div>
+
+				    		</div>
+
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- Resume / End -->
+
+    		<!-- Contact -->
+			<section id="contact" class="swiper-slide" data-caption="Do not hestiate to <span>contact me</span>" data-title="Contact Me">
+				<div class="section-wrapper">
+
+					<!-- Content -->
+					<div class="contact-content padded">
+
+						<!-- Info -->
+		    			<div class="contact-box">
+		    				<h4 class="title-bar title-bar-black"><strong>Contact</strong> me</h4>
+		    				<div class="box-content">
+		    					<ul class="list-icons ">
+		    						<li>
+		    							<i class="fa fa-map-marker fa-fw text-primary"></i>
+		    							<span class="content">The Delaware<br>
+										Mill St, Gardens 8001<br>
+										Cape Town, South Africa </span>
+									</li>
+									<li>
+		    							<i class="fa fa-envelope-o fa-fw text-primary"></i>
+		    							<span class="content"><a href="#">contactme@robinpretorius.co.za</a></span>
+									</li>
+									<li>
+		    							<i class="fa fa-phone fa-fw text-primary"></i>
+		    							<span class="content">(+27)631768357</span>
+									</li>
+		    					</ul>
+		    				</div>
+		    			</div>
+
+		    			<!-- Form -->
+		    			<div class="contact-box">
+		    				<h4 class="title-bar title-bar-black"><strong>Write</strong> to me</h4>
+		    				<form id="contact-form" class=" clearfix">
+		    					<div class="row">
+		    						<div class="col-md-6 form-group">
+		    							<input type="text" name="name" class="form-control" placeholder="Name and surname">
+		    						</div>
+		    						<div class="col-md-6 form-group">
+		    							<input type="email" name="email" class="form-control" placeholder="Email address">
+		    						</div>
+		    						<div class="col-md-12 form-group">
+		    							<input type="text" name="subject" class="form-control" placeholder="Subject">
+		    						</div>
+		    					</div>
+		    					<div class="form-group">
+		    						<textarea name="message" class="form-control" rows="4" placeholder="Your message"></textarea>
+		    					</div>
+		    					<button type="submit" class="btn btn-primary pull-right">Send Message!</button>
+		    				</form>
+		    			</div>
+
+		    			<!-- Social Media -->
+		    			<div class="contact-box">
+		    				<h4 class="title-bar title-bar-black"><strong>Social</strong> media</h4>
+		    				<div class="social-icons margin-bottom-10">
+		    					<a href="#" class="social-icon icon-twitter"><i class="fa fa-twitter fa-fw"></i></a>
+		    					<a href="#" class="social-icon icon-google-plus"><i class="fa fa-google-plus fa-fw"></i></a>
+		    				</div>
+		    			</div>
+
+					</div>
+
+					<!-- Map -->
+					<div class="contact-map dark">
+						<div id="google-map" data-style="dark"></div>
+						<div class="map-overlay">
+							<div class="overlay overlay-black" data-alpha="50"></div>
+							<div class="overlay-content vertical-center ">
+								<div class="owl-carousel" data-single-item="true" data-auto-play="4000">
+									<div>
+										<span class="big-text">Working with Robin it was the best time in my life!</span>
+										<span class="caption text-primary">Robyn Adams, 29 years old</span>
+									</div>
+									<div>
+										<span class="big-text">He completely changed my &amp; life!</span>
+										<span class="caption text-primary">Dave Webber, 32 years old</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<a href="#" class="btn btn-xs btn-black" data-target="toggle-map">Google map</a>
+					</div>
+
+				</div>
+			</section>
+			<!-- Contact / End -->
+
+		</div>
+
+		<!-- Menu Toggle -->
+    	<a href="#" class="menu-toggle menu-toggle-mobile" data-target="menu-toggle"></a>
+
     </div>
+    <!-- Sections / End -->
 
-  </body>
+    <!-- Mobile Info -->
+	<div id="mobile-info">
+		<span class="left fa fa-chevron-left"></span><span class="right fa fa-chevron-right"></span>
+	</div>
+
+	<!-- Main Menu -->
+	<div id="main-menu" class="dark">
+		<!-- Menu Toggle -->
+    	<a href="#" id="menu-close"></a>
+		<ul class="nav nav-menu vertical-center">
+			<li><a href="#" data-slide="1">Resume</a></li>
+			<li><a href="#" data-slide="4">Contact</a></li>
+		</ul>
+	</div>
+    
+</div>
+<!-- Page Wrapper / End -->
+
+<!-- Libraries -->
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<!-- Plugins -->
+<script src="js/plugins.js"></script>
+
+<!-- Google Map -->
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+<script src="js/GoogleMap.js"></script>
+
+<!-- Custom Script -->
+<script src="js/custom.min.js"></script>
+
+<!-- Google Analytics: Change UA-XXXXX-X to be your site's ID. Go to http://www.google.com/analytics/ for more information. -->
+<!--
+<script>
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-XXXXX-X']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+</script>
+-->
+
+</body>
+
 </html>
