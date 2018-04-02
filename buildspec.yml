@@ -1,4 +1,4 @@
-version: 0.2
+version: 0.1
 
 phases:
   build:
@@ -7,10 +7,6 @@ phases:
 artifacts:
   files:
     - index.html
+    - favicon.ico
+    - styles/main.css
     - images/*
-    - colors/*
-    - css/*
-    - fonts/*
-    - js/*
-    - php/*
-    - projects/*
