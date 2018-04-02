@@ -7,6 +7,10 @@ phases:
 artifacts:
   files:
     - index.html
-    - favicon.ico
-    - styles/main.css
+    - css/*
     - images/*
+    - fonts/*
+    - js/*
+    - php/*
+    - projects/*
+    - colors/*
