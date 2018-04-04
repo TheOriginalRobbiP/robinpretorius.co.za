@@ -1,0 +1,29 @@
+{
+  "name": "robinpretorius.co.za",
+  "version": "1.0.0",
+  "description": "Online CV",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "webpack": "webpack",
+    "webpack-watch": "webpack --watch"
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TheOriginalRobbiP/robinpretorius.co.za.git"
+  },
+  "author": "Robin Pretorius",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TheOriginalRobbiP/robinpretorius.co.za/issues"
+  },
+  "homepage": "https://github.com/TheOriginalRobbiP/robinpretorius.co.za#readme",
+  "dependencies": {
+    "local-web-server": "^2.5.1"
+  },
+  "devDependencies": {
+    "webpack": "^4.2.0",
+    "webpack-cli": "^2.0.13"
+  }
+}
